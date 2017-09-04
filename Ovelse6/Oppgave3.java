@@ -82,7 +82,9 @@ class Tekstanalyse {
     }
 
     public String getHoyeste() {
+
         
+
     }
 
 }
