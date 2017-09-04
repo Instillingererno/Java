@@ -9,11 +9,7 @@ class MinRandom {
         if(ovre <= nedre || ovre - nedre == 1) { //Det er ingen heltall mellom nedre og ovre hvis differansen er 1
             throw new IllegalArgumentException("Den øvre grensen kan ikke være mindre enn den nedre grensen!");
         } else {
-<<<<<<< HEAD
             return nedre + (this.tall.nextInt(ovre - nedre - 1) + 1); //+1 for å unngå å legge til 0
-=======
-            return nedre + this.tall.nextInt(ovre - nedre) + 1; //+1 for å unngå å legge til 0
->>>>>>> a973e5f81e230107999c1de273ba2353917548be
         }
     }
 
