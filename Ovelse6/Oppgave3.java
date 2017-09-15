@@ -45,7 +45,7 @@ class Tekstanalyse {
 
         int antall = 0;
         for(int i = 0; i < 29; i++) {
-            if (this.antallTegn[i] < 0) {
+            if (this.antallTegn[i] > 0) {
                 antall += 1;
             }
         }
@@ -54,9 +54,10 @@ class Tekstanalyse {
 
     }
 
-    public String getProsentAvIkkeBokstaver() {
-
-        return (this.antallTegn[29] / (this.getTotalBokstaver() + this.antallTegn[29])) * 100 + " %";
+    public double getProsentAvIkkeBokstaver() {
+        double teller = this.antallTegn[29];
+        double nevner = this.getTotalBokstaver() + this.antallTegn[29];
+        return (teller / nevner * 100);
 
     }
 
@@ -93,12 +94,12 @@ class Oppgave3 {
 
     public static void main(String[] args) {
 
-        Tekstanalyse test = new Tekstanalyse("abcdefghijklmnopqrstuvwxyzæøå ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ");
+        Tekstanalyse test = new Tekstanalyse("Dette er en test");
 
         System.out.println(test.getTotalBokstaver());
         System.out.println(test.getAntallForskjelligeBokstaver());
         System.out.println(test.getProsentAvIkkeBokstaver());
-        System.out.println(test.getAntallForekomst());
+        System.out.println(test.getAntallForekomst('a'));
     }
 
 }
