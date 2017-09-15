@@ -58,7 +58,6 @@ class Tekstanalyse {
         double teller = this.antallTegn[29];
         double nevner = this.getTotalBokstaver() + this.antallTegn[29];
         return (teller / nevner * 100);
-
     }
 
     public int getAntallForekomst(char tekst) {
@@ -82,11 +81,11 @@ class Tekstanalyse {
 
     }
 
-    /*public String getHoyeste() {
+    public String getHoyeste() {
+        
 
 
-
-    }*/
+    }
 
 }
 
