@@ -81,11 +81,11 @@ class Tekstanalyse {
 
     }
 
-    public String getHoyeste() {
+    /*public String getHoyeste() {
 
-        
 
-    }
+
+    }*/
 
 }
 
@@ -95,6 +95,10 @@ class Oppgave3 {
 
         Tekstanalyse test = new Tekstanalyse("abcdefghijklmnopqrstuvwxyzæøå ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ");
 
+        System.out.println(test.getTotalBokstaver());
+        System.out.println(test.getAntallForskjelligeBokstaver());
+        System.out.println(test.getProsentAvIkkeBokstaver());
+        System.out.println(test.getAntallForekomst());
     }
 
 }
