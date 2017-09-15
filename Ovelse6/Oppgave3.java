@@ -86,7 +86,7 @@ class Tekstanalyse {
         int neste = 0;
         String text = "";
         hoyeste[0] = 0;
-        for(int i = 0; i < this.antallTegn.length(); i++) {
+        for(int i = 0; i < this.antallTegn.length; i++) {
             if(this.antallTegn[i] > hoyeste[neste]) {
                 for(int j = neste; j >= 0; j--) {
                     if(j != 0) {
@@ -98,7 +98,7 @@ class Tekstanalyse {
                 text = "";
                 text += Character.toChars(i + 97);
                 neste = 0;
-            } else if (this.antallTegn[i] = hoyeste[neste]) {
+            } else if (this.antallTegn[i] == hoyeste[neste]) {
                 neste++;
                 hoyeste[neste] = this.antallTegn[i];
                 text += Character.toChars(i + 97);
@@ -112,7 +112,7 @@ class Oppgave3 {
 
     public static void main(String[] args) {
 
-        Tekstanalyse test = new Tekstanalyse("Dette er en test");
+        Tekstanalyse test = new Tekstanalyse("A");
 
         System.out.println(test.getTotalBokstaver());
         System.out.println(test.getAntallForskjelligeBokstaver());
