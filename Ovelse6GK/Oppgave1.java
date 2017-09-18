@@ -10,7 +10,7 @@ class Oppgave1 {
 
         int[] tall = new int[10];
 
-        for(int i = 0; i < 10000; i++) {
+        for(int i = 0; i < 1000; i++) {
 
             tall[random.nextInt(10)]++;
 

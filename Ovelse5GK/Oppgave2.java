@@ -70,10 +70,10 @@ class Oppgave2 {
 
         System.out.println("Klasse test");
         System.out.println("Lager et objekt ved navn 'test' med verdiene 5 i teller og 7 i nevner");
-        Fraction test = new Fraction(5,7);
+        Fraction test = new Fraction(1,2);
         System.out.println("Tester summere funksjonen ved å kjøre test.getSum(2,3) som adderer 5/7 og 2/3");
         System.out.println("Forventet svar er: 29/21");
-        test.getSum(2,3);
+        test.getSum(3,4);
         test.printFraction();
         System.out.println("Tester subtrahere funksjonen ved å kjøre test.getDiff(2,8), som subtraherer 29/21 med 2/8");
         System.out.println("Forventet svar er 190/168, som forkortet blir 95/84");
