@@ -9,7 +9,7 @@ class MinRandom {
         if(ovre <= nedre || ovre - nedre == 1) { //Det er ingen heltall mellom nedre og ovre hvis differansen er 1
             throw new IllegalArgumentException("Den øvre grensen kan ikke være mindre enn den nedre grensen!");
         } else {
-            return nedre + (this.tall.nextInt(ovre - nedre - 1) + 1); //+1 for å unngå å legge til 0
+            return nedre + (this.tall.nextInt(ovre - nedre + 1)); //+1 for å unngå å legge til 0
         }
     }
 
@@ -35,7 +35,7 @@ class Oppgave3 {
         System.out.println(test.nesteHeltall(1,10));
         System.out.println("Tester nesteDesimaltall(2,10) forventer et tall potensielt med desimal mellom 2 og 10");
         System.out.println(test.nesteDesimaltall(2,10));
-        System.out.println("Tester nesteHeltall(5,7) forventer 6");
+        System.out.println("Tester nesteHeltall(5,7) forventer noe mellom 5 og 6");
         System.out.println(test.nesteHeltall(5,7));
         System.out.println("Tester nesteDesimaltall(0,1) forventer et desimaltall mellom 0 og 1");
         System.out.println(test.nesteDesimaltall(0,1));

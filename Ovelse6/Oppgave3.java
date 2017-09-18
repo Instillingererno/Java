@@ -1,10 +1,11 @@
 //Oppgave 7.8.3 s.231 30-08-2017
 
-import java.util.Scanner;
+import static javax.swing.JOptionPane.*;
+import java.util.Arrays;
 
 class Tekstanalyse {
 
-    private int[] antallTegn = new int[30];
+    public int[] antallTegn = new int[30];
 
     public Tekstanalyse(String tekst) {
 
@@ -102,6 +103,7 @@ class Tekstanalyse {
                     text += String.valueOf(Character.toChars(i + 97));
                 } else if (i == 26) {
                     text += "æ";
+                    System.out.println(text);
                 } else if (i == 27) {
                     text += "ø";
                 } else if (i == 28) {
@@ -109,7 +111,7 @@ class Tekstanalyse {
                 }
 
                 neste = 0;
-            } else if (this.antallTegn[i] == hoyeste[neste]) {
+            } else if (this.antallTegn[i] == hoyeste[neste] && this.antallTegn[i] != 0) {
                 neste++;
                 hoyeste[neste] = this.antallTegn[i];
                 if (i >= 0 && i <= 25) {
@@ -123,18 +125,20 @@ class Tekstanalyse {
                 }
             }
         }
+        System.out.println(text);
         return text;
     }
 }
 
 class Oppgave3 {
-
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
+        String tekst = "";
         while(true) {
-            Tekstanalyse test = new Tekstanalyse(scanner.next());
+            Tekstanalyse test = new Tekstanalyse(showInputDialog("Skriv inn tekst å analysere: ")); //showInputDialog("Skriv inn tekst å analysere: ")
+            System.out.println(Arrays.toString(test.antallTegn));
             System.out.println("------------------------------------------------------------------------");
-            System.out.println("");
+            System.out.println("æøå");
             System.out.println("Total antall bokstaver i oppgitt tekst: " + test.getTotalBokstaver());
             System.out.println("Total antall forskjellige bokstaver i oppgitt tekst: " + test.getAntallForskjelligeBokstaver());
             System.out.println("Prosent av tegn som ikke er bokstaver: " + test.getProsentAvIkkeBokstaver());
