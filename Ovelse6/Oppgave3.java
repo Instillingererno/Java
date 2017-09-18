@@ -96,12 +96,12 @@ class Tekstanalyse {
                     }
                 }
                 text = "";
-                text += Character.toChars(i + 97);
+                text += (String) Character.toChars(i + 97);
                 neste = 0;
             } else if (this.antallTegn[i] == hoyeste[neste]) {
                 neste++;
                 hoyeste[neste] = this.antallTegn[i];
-                text += Character.toChars(i + 97);
+                text += (String) Character.toChars(i + 97);
             }
         }
         return text;
