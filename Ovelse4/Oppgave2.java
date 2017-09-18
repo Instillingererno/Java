@@ -20,6 +20,12 @@ class Valuta {
 
     }
 
+    public double fraVerdi(double mengde) {
+
+        return mengde * this.verdi;
+
+    }
+
 }
 
 class Oppgave2 {

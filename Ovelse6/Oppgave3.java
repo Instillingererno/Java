@@ -1,5 +1,7 @@
 //Oppgave 7.8.3 s.231 30-08-2017
 
+import java.util.Scanner;
+
 class Tekstanalyse {
 
     private int[] antallTegn = new int[30];
@@ -86,7 +88,7 @@ class Tekstanalyse {
         int neste = 0;
         String text = "";
         hoyeste[0] = 0;
-        for(int i = 0; i < this.antallTegn.length; i++) {
+        for(int i = 0; i < 29; i++) {
             if(this.antallTegn[i] > hoyeste[neste]) {
                 for(int j = neste; j >= 0; j--) {
                     if(j != 0) {
@@ -96,12 +98,29 @@ class Tekstanalyse {
                     }
                 }
                 text = "";
-                text += (String) Character.toChars(i + 97);
+                if (i >= 0 && i <= 25) {
+                    text += String.valueOf(Character.toChars(i + 97));
+                } else if (i == 26) {
+                    text += "æ";
+                } else if (i == 27) {
+                    text += "ø";
+                } else if (i == 28) {
+                    text += "å";
+                }
+
                 neste = 0;
             } else if (this.antallTegn[i] == hoyeste[neste]) {
                 neste++;
                 hoyeste[neste] = this.antallTegn[i];
-                text += (String) Character.toChars(i + 97);
+                if (i >= 0 && i <= 25) {
+                    text += String.valueOf(Character.toChars(i + 97));
+                } else if (i == 26) {
+                    text += "æ";
+                } else if (i == 27) {
+                    text += "ø";
+                } else if (i == 28) {
+                    text += "å";
+                }
             }
         }
         return text;
@@ -111,14 +130,20 @@ class Tekstanalyse {
 class Oppgave3 {
 
     public static void main(String[] args) {
-
-        Tekstanalyse test = new Tekstanalyse("A");
-
-        System.out.println(test.getTotalBokstaver());
-        System.out.println(test.getAntallForskjelligeBokstaver());
-        System.out.println(test.getProsentAvIkkeBokstaver());
-        System.out.println(test.getAntallForekomst('a'));
-        System.out.println(test.getHoyeste());
+        Scanner scanner = new Scanner(System.in);
+        while(true) {
+            Tekstanalyse test = new Tekstanalyse(scanner.next());
+            System.out.println("------------------------------------------------------------------------");
+            System.out.println("");
+            System.out.println("Total antall bokstaver i oppgitt tekst: " + test.getTotalBokstaver());
+            System.out.println("Total antall forskjellige bokstaver i oppgitt tekst: " + test.getAntallForskjelligeBokstaver());
+            System.out.println("Prosent av tegn som ikke er bokstaver: " + test.getProsentAvIkkeBokstaver());
+            System.out.println("Antall forekomster av a: " + test.getAntallForekomst('a'));
+            System.out.println("Den/de bokstaver som forekommer oftest er: " + test.getHoyeste());
+            System.out.println("");
+            System.out.println("------------------------------------------------------------------------");
+            test = null;
+        }
     }
 
 }
