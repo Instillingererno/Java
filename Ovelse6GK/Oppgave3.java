@@ -8,7 +8,7 @@ class Tekstanalyse {
     public int[] antallTegn = new int[30];
 
     public Tekstanalyse(String tekst) {
-
+//KUN FOR GITHUB; ALTSÅ DENNE SETNINGEN
         for(int i = 0; i < tekst.length(); i++) {
 
             char tegn = tekst.charAt(i);
@@ -30,7 +30,6 @@ class Tekstanalyse {
             }
 
         }
-
     }
 
     public int getTotalBokstaver() {
