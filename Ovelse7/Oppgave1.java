@@ -80,9 +80,8 @@ class Temperaturer {
 class Oppgave1 {
     public static void main(String[] args) {
         Temperaturer janujuni = new Temperaturer(null);
-        int[] intDag = IntStream.range(1,janujuni.temps.length + 1).toArray();
-        String[] stringDag = Arrays.toString(intDag).split("[\\[\\]]")[1].split(", ");
-        int valgDag = showOptionDialog(null, "Velg dag å regne time gjennomsnitt av", "Velg dag", DEFAULT_OPTION, PLAIN_MESSAGE, null, stringDag, stringDag[0]);
+        String[] dag = Arrays.toString(IntStream.range(1,janujuni.temps.length + 1).toArray()).split("[\\[\\]]")[1].split(", ");
+        int valgDag = showOptionDialog(null, "Velg dag å regne time gjennomsnitt av", "Velg dag", DEFAULT_OPTION, PLAIN_MESSAGE, null, dag, dag[0]);
 
         String output = "Gjennomsnitt for hver dag i måneden: " + janujuni.gjennomsnittForHverDag() +
         "\nGjennomsnitt for hver time i dag: ";
