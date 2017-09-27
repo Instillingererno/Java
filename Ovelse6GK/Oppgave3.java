@@ -107,7 +107,7 @@ class Tekstanalyse {
                     text += "ø";
                 } else if (i == 28) {
                     text += "å";
-                }
+                }+
 
                 neste = 0;
             } else if (this.antallTegn[i] == hoyeste[neste] && this.antallTegn[i] != 0) {
