@@ -1,10 +1,13 @@
 //Oppgave 11.10.1 s.386 09-10-2017
 
+import java.time.Year;
+import static javax.swing.JOptionPane.*;
+
 class Person {
     private final String fornavn;
     private final String etternavn;
-    private final short fodselsar;
-    Person(String fnavn, String enavn, short fodsar) {
+    private final int fodselsar;
+    Person(String fnavn, String enavn, int fodsar) {
         this.fornavn = fnavn.trim();
         this.etternavn = enavn.trim();
         this.fodselsar = fodsar;
@@ -15,61 +18,97 @@ class Person {
     public String getEtternavn() {
         return this.etternavn;
     }
-    public short getFodselsar() {
+    public int getFodselsar() {
         return this.fodselsar;
     }
 }
 
 class ArbTaker {
     Person personalia;
-    short arbtakernr;
-    short ansettelsesar;
-    int manedslonn;
-    byte skatteprosent;
-    ArbTaker(Person person, short arbnr, short ansar, int manedslonn, byte skatpro) {
+    String arbtakernr;
+    int ansettelsesar;
+    double manedslonn;
+    byte skatteprosent = 40;
+    ArbTaker(Person person, String arbnr, int ansar, int manedslonn) {
         this.personalia = person;
         this.arbtakernr = arbnr;
         this.ansettelsesar = ansar;
         this.manedslonn = manedslonn;
-        this.skatteprosent = skatpro;
     }
-    public getPersonalia() {
+    public Person getPersonalia() {
         return personalia;
     }
-    public getArbtakernr() {
+    public String getArbtakernr() {
         return arbtakernr;
     }
-    public getAnsettelsesar() {
+    public int getAnsettelsesar() {
         return ansettelsesar;
     }
-    public getManedslonn() {
+    public double getManedslonn() {
         return manedslonn;
     }
-    public getSkatteprosent() {
+    public byte getSkatteprosent() {
         return skatteprosent;
     }
-    public setManedslonn(int lonn) {
+    public void setManedslonn(int lonn) {
         this.manedslonn = lonn;
     }
-    public SkatteTrekkManed() {
-        //ay
+    public void setSkatteProsent(byte input) {
+        this.skatteprosent = input;
     }
-    public BruttoLonn() {
-        //ay
+    public String SkatteTrekkManed() {
+        return this.personalia.getFornavn() + " betaler " + Double.toString(this.manedslonn * this.skatteprosent / 100);
     }
-    public SkatteTrekkAr() {
-        //ay
+    public String BruttoLonn() {
+        return this.personalia.getFornavn() + " har brutto lønn på: " + Double.toString(this.manedslonn * 12);
     }
-    public Navn() {
-        //ay
+    public String SkatteTrekkAr() {
+        return this.personalia.getFornavn() + " betaler i året: " + Double.toString((this.manedslonn * this.skatteprosent / 100) * 10.5);
     }
-    public Alder() {
-        //ay
+    public String Navn() {
+        return this.personalia.getEtternavn() + ", " + this.personalia.getFornavn();
     }
-    public AntallArIBedrift() {
-        //ay
+    public int Alder() {
+        return Year.now().getValue() - this.personalia.getFodselsar();
     }
-    public ArIBedriftMot(short input) {
-        //ay
+    public int AntallArIBedrift() {
+        return Year.now().getValue() - this.ansettelsesar;
+    }
+    public boolean ArIBedriftMot(int input) {
+        return (this.AntallArIBedrift() > input) ? true : false;
+    }
+}
+
+class ValgTre {
+    String[] meny = {"Endre månedslønn", "Endre skatteprosent"};
+    public int lesValg() {
+        int valg = showOptionDialog(null, Oppgave1.toString() + "\nGjør endringer?", YES_NO_OPTION, PLAIN_MESSAGE, null, meny, meny[0]);
+        return valg;
+    }
+    
+}
+
+class Oppgave1 {
+    public static void main(String[] args) {
+        Person pers1 = new Person("Ola", "Nordman", 1980);
+        ArbTaker arbtaker1 = new ArbTaker(pers1, "007", 2010, 100000);
+        showMessageDialog(null, toString());
+        int valg;
+        while((valg = ))
+    }
+
+    public String toString() {
+        int aar = 5; //Dis one
+        String output = "Fornavn: " + pers1.getFornavn() +
+                        "\nEtternavn: " + pers1.getEtternavn() +
+                        "\nFødselsår: " + pers1.getFodselsar() +
+                        "\nSkatte trekk per måned: " + arbtaker1.SkatteTrekkManed() +
+                        "\nBrutto lønn: " + arbtaker1.BruttoLonn() +
+                        "\nSkatte trekk per år: " + arbtaker1.SkatteTrekkAr() +
+                        "\nNavn: " + arbtaker1.Navn() +
+                        "\nAlder: " + arbtaker1.Alder() +
+                        "\nAntall år i bedriften: " + arbtaker1.AntallArIBedrift() +
+                        "\nAr i bedrift mot " + aar + ": " + arbtaker1.ArIBedriftMot(aar);
+        return output;
     }
 }
