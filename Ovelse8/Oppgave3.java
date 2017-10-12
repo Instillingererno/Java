@@ -46,7 +46,7 @@ class behandler {
         String[] tempArray = this.data.split(" ");
         String output = "";
         for(int i = 0; i < tempArray.length; i++) {
-            if(tempArray[i].length() == ord.length() && tempArray[i].equals(ord)) {
+            if(tempArray[i].equals(ord)) {
                 tempArray[i] = skift;
             } else if(tempArray[i].substring(0,tempArray[i].length()-1).equals(ord) && this.tegn.contains(tempArray[i].substring(tempArray[i].length()-1))) {
                 tempArray[i] = skift + tempArray[i].substring(tempArray[i].length()-1);
