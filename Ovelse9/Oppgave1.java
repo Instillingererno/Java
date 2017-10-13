@@ -50,7 +50,7 @@ class ArbTaker {
     public byte getSkatteprosent() {
         return skatteprosent;
     }
-    public void setManedslonn(int lonn) {
+    public void setManedslonn(double lonn) {
         this.manedslonn = lonn;
     }
     public void setSkatteProsent(byte input) {
@@ -77,38 +77,57 @@ class ArbTaker {
     public boolean ArIBedriftMot(int input) {
         return (this.AntallArIBedrift() > input) ? true : false;
     }
-}
-
-class ValgTre {
-    String[] meny = {"Endre månedslønn", "Endre skatteprosent"};
+    public String toString() {
+        int aar = 5; //Dis one
+        String output = "Fornavn: " + this.personalia.getFornavn() +
+                        "\nEtternavn: " + this.personalia.getEtternavn() +
+                        "\nFødselsår: " + this.personalia.getFodselsar() +
+                        "\nSkatte trekk per måned: " + this.SkatteTrekkManed() +
+                        "\nBrutto lønn: " + this.BruttoLonn() +
+                        "\nSkatte trekk per år: " + this.SkatteTrekkAr() +
+                        "\nNavn: " + this.Navn() +
+                        "\nAlder: " + this.Alder() +
+                        "\nAntall år i bedriften: " + this.AntallArIBedrift() +
+                        "\nAr i bedrift mot " + aar + ": " + this.ArIBedriftMot(aar);
+        return output;
+    }
     public int lesValg() {
-        int valg = showOptionDialog(null, Oppgave1.toString() + "\nGjør endringer?", YES_NO_OPTION, PLAIN_MESSAGE, null, meny, meny[0]);
+        String[] meny = {"Endre månedslønn", "Endre skatteprosent"};
+        String testString = this.toString() + "\nGjør endringer?";
+        int valg = showOptionDialog(null, testString, "Gjør endringer?", YES_NO_OPTION, PLAIN_MESSAGE, null, meny, meny[0]);
         return valg;
     }
-    
+    public void endring(int input) {
+        switch(input) {
+            case 0:
+                try {
+                    double nyLonn = Double.parseDouble(showInputDialog("Endre månedslønn til: "));
+                    this.setManedslonn(nyLonn);
+                }
+                catch(NumberFormatException e) {
+                    showMessageDialog(null, "Månedslønn kan ikke være tekst, prøv igjen");
+                }
+                break;
+            case 1:
+                try {
+                    byte nySkatt = Byte.parseByte(showInputDialog("Endre skatteprosent til: "));
+                    this.setSkatteProsent(nySkatt);
+                }
+                catch(NumberFormatException e) {
+                    showMessageDialog(null, "Skatteprosent kan ikke være tekst");
+                }
+                break;
+        }
+    }
 }
-
 class Oppgave1 {
     public static void main(String[] args) {
         Person pers1 = new Person("Ola", "Nordman", 1980);
         ArbTaker arbtaker1 = new ArbTaker(pers1, "007", 2010, 100000);
-        showMessageDialog(null, toString());
+        showMessageDialog(null, arbtaker1.toString());
         int valg;
-        while((valg = ))
-    }
-
-    public String toString() {
-        int aar = 5; //Dis one
-        String output = "Fornavn: " + pers1.getFornavn() +
-                        "\nEtternavn: " + pers1.getEtternavn() +
-                        "\nFødselsår: " + pers1.getFodselsar() +
-                        "\nSkatte trekk per måned: " + arbtaker1.SkatteTrekkManed() +
-                        "\nBrutto lønn: " + arbtaker1.BruttoLonn() +
-                        "\nSkatte trekk per år: " + arbtaker1.SkatteTrekkAr() +
-                        "\nNavn: " + arbtaker1.Navn() +
-                        "\nAlder: " + arbtaker1.Alder() +
-                        "\nAntall år i bedriften: " + arbtaker1.AntallArIBedrift() +
-                        "\nAr i bedrift mot " + aar + ": " + arbtaker1.ArIBedriftMot(aar);
-        return output;
+        while((valg = arbtaker1.lesValg()) != CLOSED_OPTION) {
+            arbtaker1.endring(valg);
+        }
     }
 }
