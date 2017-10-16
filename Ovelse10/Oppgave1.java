@@ -1,4 +1,4 @@
-//Oppgave 12.10.1 s.417 13-10-2017
+2//Oppgave 12.10.1 s.417 13-10-2017
 
 import static javax.swing.JOptionPane.*;
 
@@ -55,7 +55,7 @@ class Oppgaveoversikt {
     }
     public void regNyStudent(Student input) {
         this.antStud++;
-        
+
     }
     public void okOppgForStudent(String navn) {
 

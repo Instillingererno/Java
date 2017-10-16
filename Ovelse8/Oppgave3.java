@@ -29,7 +29,7 @@ class behandler {
     }
     public double gjennomsnittOrdPerPeriode() {
         String tempString = this.data;
-        String[] tempArray = tempString.split("[.,!'-?]");
+        String[] tempArray = tempString.split("[.!?]");
         double tempInt = 0;
         for(int i = 0; i < tempArray.length; i++) {
             int modifier = 0;
@@ -46,12 +46,18 @@ class behandler {
         String[] tempArray = this.data.split(" ");
         String output = "";
         for(int i = 0; i < tempArray.length; i++) {
-            if(tempArray[i].equals(ord)) {
-                tempArray[i] = skift;
-            } else if(tempArray[i].substring(0,tempArray[i].length()-1).equals(ord) && this.tegn.contains(tempArray[i].substring(tempArray[i].length()-1))) {
-                tempArray[i] = skift + tempArray[i].substring(tempArray[i].length()-1);
+            try {
+                if(tempArray[i].equals(ord)) {
+                    tempArray[i] = skift;
+                } else if(tempArray[i].substring(0,tempArray[i].length()-1).equals(ord) && this.tegn.contains(tempArray[i].substring(tempArray[i].length()-1))) {
+                    tempArray[i] = skift + tempArray[i].substring(tempArray[i].length()-1);
+                }
+                output += tempArray[i] + " ";
+            } catch(StringIndexOutOfBoundsException e) {
+                showMessageDialog(null, "Det er ingen ord som kan byttes ut!");
+                return "Det skjedde en feil";
             }
-            output += tempArray[i] + " ";
+
         }
         return output;
     }
