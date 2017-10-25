@@ -8,6 +8,7 @@ class Student {
 
     public Student(String navn) {
         this.navn = navn;
+        this.antOppg = 0;
     }
     public String getNavn() {
         return this.navn;
@@ -27,13 +28,9 @@ class Oppgaveoversikt {
     private Student[] studenter; //tabellen opprettes i konstruktøreturn
     private int antStud = 0; //økes med 1 for hver ny student
 
-    public void Oppgaveoversikt(Student[] input) {
+    public Oppgaveoversikt(Student[] input) {
         if(input != null) {
-            this.antStud = input.length;
-            this.studenter = new Student[this.antStud];
-            for(int i = 0; i < this.antStud; i++) {
-                this.studenter[i] = input[i];
-            }
+            this.studenter = input;
         } else {
             this.studenter = new Student[0];
         }
@@ -54,18 +51,14 @@ class Oppgaveoversikt {
             return "Ingen student ved det oppgitte navnet: " + navn;
         }
     }
-    public void regNyStudent(Student input) {
-        Student[] temp = new Student[this.studenter.length];
+    public void regNyStudent(String input) {
+        Student[] temp = new Student[this.studenter.length + 1];
         for(int i = 0; i < this.antStud; i++) {
             temp[i] = this.studenter[i];
         }
         this.antStud++;
-        temp[this.antStud - 1] = input;
-        this.studenter = new Student[this.antStud];
-        for(int i = 0; i < this.antStud; i++) {
-            this.studenter[i] = temp[i];
-            showMessageDialog(null, "Studenten er blitt registrert");
-        }
+        temp[this.antStud - 1] = new Student(input);
+        this.studenter = temp;
     }
     public void okOppgForStudent(String navn, int okning) {
         int student = -1;
@@ -96,20 +89,19 @@ class Oppgaveoversikt {
     public void endring(int input) {
         switch(input) {
             case 0:
-                try {
-                    String navn = showInputDialog("Navn til ny student?: ");
-                    Student temp = new Student(navn);
-                    this.regNyStudent(temp);
-                }
+                //try {
+                    String navn1 = showInputDialog("Navn til ny student?: ");
+                    this.regNyStudent(navn1);
+                /*}
                 catch(Exception e) {
                     showMessageDialog(null, "Noe gikk galt, prøv igjen eller gi denne meldingen til noen som kan noe: " + e);
-                }
+                }*/
                 break;
             case 1:
                 try {
-                    String navn = showInputDialog("Navnet til student å øke godkjente oppgaver til?: ");
+                    String navn2 = showInputDialog("Navnet til student å øke godkjente oppgaver til?: ");
                     int okning = Integer.parseInt(showInputDialog("Økning: "));
-                    this.okOppgForStudent(navn, okning);
+                    this.okOppgForStudent(navn2, okning);
                 }
                 catch(NumberFormatException e) {
                     showMessageDialog(null, "Skatteprosent kan ikke være tekst");
@@ -124,11 +116,27 @@ class Oppgaveoversikt {
 
 class Oppgave1 {
     public static void main(String[] args) {
-        Oppgaveoversikt oversikt = new Oppgaveoversikt();
 
-        System.out.println((new Student("roger")).toString());
+        Student test1 = new Student("Test1");
+        System.out.println(test1.toString());
+        Student test2 = new Student("Test2");
+        System.out.println(test2.toString());
+        Student[] test3 = new Student[] {test1,test2};
+        System.out.println("Det fungerte");
+        Oppgaveoversikt test4 = new Oppgaveoversikt(test3);
+        System.out.println(test4.toString());
+        System.out.println("her skal test4.toString() være, er den det");
+        String output = "";
+        for(int i = 0; i < 2; i++) {
+            output += test3[i].toString() + "\n";
+        }
+        System.out.println(output);
 
-        System.out.println((new Oppgaveoversikt(new Student[] {new Student("roger"), new Student("woops"), new Student("test")})).toString());
+        Oppgaveoversikt oversikt = new Oppgaveoversikt(null);
+
+        //System.out.println((new Student("roger")).toString());
+
+        //System.out.println((new Oppgaveoversikt(new Student[] {new Student("roger"), new Student("woops"), new Student("test")})).toString());
 
         int valg;
         while((valg = oversikt.lesValg()) != CLOSED_OPTION) {
