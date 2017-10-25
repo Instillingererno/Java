@@ -29,10 +29,14 @@ class Oppgaveoversikt {
     private int antStud = 0; //økes med 1 for hver ny student
 
     public Oppgaveoversikt(Student[] input) {
-        if(input != null) {
-            this.studenter = input;
-        } else {
+        if(input == null) {
             this.studenter = new Student[0];
+        } else {
+            this.antStud = input.length;
+            this.studenter = new Student[input.length];
+            for(int i = 0; i < input.length; i++) {
+                this.studenter[i] = input[i];
+            }
         }
     }
     public int getAntallStudenter() {
@@ -96,20 +100,19 @@ class Oppgaveoversikt {
     public void endring(int input) {
         switch(input) {
             case 0:
-                //try {
+                try {
                     String navn1 = showInputDialog("Navn til ny student?: ");
                     this.regNyStudent(navn1);
-                /*}
+                }
                 catch(Exception e) {
                     showMessageDialog(null, "Noe gikk galt, prøv igjen eller gi denne meldingen til noen som kan noe: " + e);
-                }*/
+                }
                 break;
             case 1:
                 try {
                     String[] valg = this.getNavn();
 
                     String navn2 = showInputDialog(null, "Hvilken student å øke oppgaver til", "Student oppgave økning", QUESTION_MESSAGE, null, valg, valg[0]).toString();
-                    //String navn2 = showInputDialog("Navnet til student å øke godkjente oppgaver til?: ");
                     int okning = Integer.parseInt(showInputDialog("Økning: "));
                     this.okOppgForStudent(navn2, okning);
                 }
@@ -127,7 +130,9 @@ class Oppgaveoversikt {
 class Oppgave1 {
     public static void main(String[] args) {
 
-        Oppgaveoversikt oversikt = new Oppgaveoversikt(null);
+        Student[] test = new Student[] {new Student("Test1"), new Student("Test2")};
+
+        Oppgaveoversikt oversikt = new Oppgaveoversikt(test);
 
         int valg;
         while((valg = oversikt.lesValg()) != CLOSED_OPTION) {
