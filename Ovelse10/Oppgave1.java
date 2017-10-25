@@ -81,6 +81,13 @@ class Oppgaveoversikt {
         }
         return output;
     }
+    public String[] getNavn() {
+        String[] output = new String[this.studenter.length];
+        for(int i = 0; i < output.length; i++) {
+            output[i] = this.studenter[i].getNavn();
+        }
+        return output;
+    }
     public int lesValg() {
         String[] meny = {"Reg ny student", "Øk oppgaver for en student"};
         int valg = showOptionDialog(null, this.toString(), "Student oversikt", YES_NO_OPTION, PLAIN_MESSAGE, null, meny, meny[0]);
@@ -99,7 +106,10 @@ class Oppgaveoversikt {
                 break;
             case 1:
                 try {
-                    String navn2 = showInputDialog("Navnet til student å øke godkjente oppgaver til?: ");
+                    String[] valg = this.getNavn();
+
+                    String navn2 = showInputDialog(null, "Hvilken student å øke oppgaver til", "Student oppgave økning", QUESTION_MESSAGE, null, valg, valg[0]).toString();
+                    //String navn2 = showInputDialog("Navnet til student å øke godkjente oppgaver til?: ");
                     int okning = Integer.parseInt(showInputDialog("Økning: "));
                     this.okOppgForStudent(navn2, okning);
                 }
@@ -117,26 +127,7 @@ class Oppgaveoversikt {
 class Oppgave1 {
     public static void main(String[] args) {
 
-        Student test1 = new Student("Test1");
-        System.out.println(test1.toString());
-        Student test2 = new Student("Test2");
-        System.out.println(test2.toString());
-        Student[] test3 = new Student[] {test1,test2};
-        System.out.println("Det fungerte");
-        Oppgaveoversikt test4 = new Oppgaveoversikt(test3);
-        System.out.println(test4.toString());
-        System.out.println("her skal test4.toString() være, er den det");
-        String output = "";
-        for(int i = 0; i < 2; i++) {
-            output += test3[i].toString() + "\n";
-        }
-        System.out.println(output);
-
         Oppgaveoversikt oversikt = new Oppgaveoversikt(null);
-
-        //System.out.println((new Student("roger")).toString());
-
-        //System.out.println((new Oppgaveoversikt(new Student[] {new Student("roger"), new Student("woops"), new Student("test")})).toString());
 
         int valg;
         while((valg = oversikt.lesValg()) != CLOSED_OPTION) {
