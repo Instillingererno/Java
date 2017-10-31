@@ -1,6 +1,7 @@
 import static javax.swing.JOptionPane.*;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 /*interface divide {
     int findDivide(int a, int b);
@@ -48,7 +49,12 @@ class Ting {
 class lambda {
     public static void main(String[] args) {
 
-        Ting.doStuff(() -> {
+        String[] test = {"Test1", "Test2", "Test3", "Test4"};
+
+        //Stream.of(test).forEach((index) -> System.out.println(index));
+        Stream.of(test).forEach(System.out::println);
+
+        /*Ting.doStuff(() -> {
             String output = "Dette skal vise hva denoeridhnstlgk"
                         +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
                         +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
@@ -63,7 +69,7 @@ class lambda {
                         +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
                         +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh";
             System.out.println(output);
-        });
+        });*/
 
         /*Type sirkel = (int a, int b) -> b * 3;
         Type kvadrat = (int a, int b) -> a * b;
