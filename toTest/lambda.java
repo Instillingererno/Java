@@ -21,6 +21,10 @@ class test {
 interface Type {
     int areal(int a, int b);
 }
+interface Test {
+    void dewit();
+}
+
 
 class Figur {
     int lengde;
@@ -35,9 +39,31 @@ class Figur {
         return this.hvafaen.areal(this.lengde, this.bredde);
     }
 }
+class Ting {
+    public static void doStuff(Test input) {
+        input.dewit();
+    }
+}
 
 class lambda {
     public static void main(String[] args) {
+
+        Ting.doStuff(() -> {
+            String output = "Dette skal vise hva denoeridhnstlgk"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh"
+                        +"\nDfrjkndhdtnjfsjhngøhjlnfsghfgh";
+            System.out.println(output);
+        });
 
         /*Type sirkel = (int a, int b) -> b * 3;
         Type kvadrat = (int a, int b) -> a * b;
@@ -48,8 +74,8 @@ class lambda {
             System.out.println(wut[i].getAreal());
         }*/
 
-        List stuff = Arrays.asList("Test1", "Test2", "Test3");
-        stuff.forEach(System.out::println);
+        //List stuff = Arrays.asList("Test1", "Test2", "Test3");
+        //stuff.forEach(System.out::println);
 
         // ------------- Gammel test
         /*divide test1 = (int a, int b) -> (b != 0) ? a / b : 0;
