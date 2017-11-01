@@ -19,6 +19,12 @@ class test {
     }
 }*/
 
+class oisfg extends Thread {
+    run() {
+
+    }
+}
+
 interface Type {
     int areal(int a, int b);
 }
@@ -49,9 +55,13 @@ class Ting {
 class lambda {
     public static void main(String[] args) {
 
+
+
+        new Thread(()-> )
+
         String[] test = {"Test1", "Test2", "Test3", "Test4"};
 
-        //Stream.of(test).forEach((index) -> System.out.println(index));
+        Stream.of(test).forEach((index) -> System.out.println(index));
         Stream.of(test).forEach(System.out::println);
 
         /*Ting.doStuff(() -> {
