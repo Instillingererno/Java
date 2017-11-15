@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jogamp-windows">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../JavaDependencies/jogamp-windows" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../JavaDependencies/jogamp-windows" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../../JavaDependencies/jogamp-windows" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../JavaDependencies/jogamp-windows" recursive="false" type="SOURCES" />
+  </library>
+</component>
