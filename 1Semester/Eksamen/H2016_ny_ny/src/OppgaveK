@@ -1,0 +1,16 @@
+import java.io.*;
+
+public UtleieFirma lesFraFil(String filnavn) {
+    try {
+        FileInputStream lesIn = new FileInputStream(filnavn);
+        ObjectInputStream in = new ObjectInputStream(lesIn);
+        UtleieFirma temp = (UtleieFirma) in.readObject();
+        in.close();
+        lesIn.close();
+        return temp;
+    } catch(IOException e) {
+        System.out.println("Filen ble ikke funnet");
+    } catch(ClassNotFoundException e) {
+        System.out.println("Filen inneholder ikke det som var forventet");
+    }
+}

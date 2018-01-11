@@ -1,0 +1,18 @@
+import static javax.swing.JOptionPane.*;
+
+case REG_BIL:
+    if(utleieFirma != null) {
+        //Trenger hjul, motor, regnr.
+        try {
+            Int regnr = Integer.parseInt(showInputDialog("Skriv inn reg nr (kun heltall)");
+            Motor motor = new Motor(Integer.parseInt(showInputDialog("Skriv inn motornr (kun heltall)")),showInputDialog("Skriv inn girkasse"),showInputDialog("Skriv inn motor type"));
+            Hjul hjul = new Hjul(showInputDialog("Skriv inn hjul merket"),showInputDialog("Skriv inn hjul dimensjonen"),showInputDialog("Skriv inn hjul typen");
+        } catch(Exception e) {
+            showMessageDialog(null, "Noe gikk galt, prøv igjen");
+        }
+        if(utleieFirma.regBil(new Bil(regnr, motor, hjul)) {
+            showMessageDialog(null, "Bilen ble registrert");
+        } else {
+            showMessageDialog(null, "Noe gikk galt, fins en lik bil eller er garasjen full?");
+        }
+    }
