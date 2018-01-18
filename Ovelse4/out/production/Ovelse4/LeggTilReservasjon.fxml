@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d1d1d;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LeggTilReservasjonController">
+   <children>
+      <GridPane layoutX="175.0" layoutY="132.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Fra tid (long):" textAlignment="RIGHT" GridPane.halignment="RIGHT">
+               <padding>
+                  <Insets right="14.0" />
+               </padding>
+            </Label>
+            <Label text="Til tid (long):" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <padding>
+                  <Insets right="14.0" />
+               </padding>
+            </Label>
+            <Label text="Antall personer:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <padding>
+                  <Insets right="14.0" />
+               </padding>
+            </Label>
+            <Label text="Navn:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <padding>
+                  <Insets right="14.0" />
+               </padding>
+            </Label>
+            <Label text="Tlf:" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <padding>
+                  <Insets right="14.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="textFraTid" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="14.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="textTilTid" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="14.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="textAntallPersoner" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="14.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="textNavn" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="14.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="textTlf" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="14.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button layoutX="268.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleOk" text="OK" />
+      <Button layoutX="482.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+   </children>
+</AnchorPane>
