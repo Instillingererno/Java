@@ -6,18 +6,20 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TreeItem;
-import javafx.scene.control.TreeTableColumn;
-import javafx.scene.control.TreeTableView;
+import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import jdk.nashorn.api.tree.Tree;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Klient extends Application {
 
-    private static ArrayList<Tribune> tribune = new ArrayList<>();
+    private static Stage primaryStage;
+
+    public static ArrayList<Tribune> tribune = new ArrayList<>();
 
     public static void main(String[] args) {
         tribune.add(new Staa("Ståtribune 1", 100, 100));
@@ -29,6 +31,7 @@ public class Klient extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        this.primaryStage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
         Scene scene = new Scene(root);
 
@@ -45,7 +48,7 @@ public class Klient extends Application {
     @FXML TextField tribuneNavn;
     @FXML TextField kapasitet;
     @FXML TextField pris;
-    @FXML TextField solgtebilletter;
+    @FXML TextField solgteBilletter;
     @FXML TextField inntekt;
 
 
@@ -72,8 +75,11 @@ public class Klient extends Application {
         ObservableList<TreeItem<String>> vip = FXCollections.observableArrayList();
         //lag root
         final TreeItem<String> staaItem = new TreeItem<>("Stå tribuner");
+        staaItem.setExpanded(true);
         final TreeItem<String> sitteItem = new TreeItem<>("Sitte tribuner");
+        sitteItem.setExpanded(true);
         final TreeItem<String> vipItem = new TreeItem<>("VIP tribuner");
+        vipItem.setExpanded(true);
 
         for(Tribune i : tribune) if(i instanceof VIP) {
             vip.add(new TreeItem<>(i.getTribunenavn()));
@@ -96,16 +102,44 @@ public class Klient extends Application {
 
         return output;
     }
-
+    TreeItem currentItem;
     private void oppdaterTribune(TreeItem item) {
+        this.currentItem = item;
         for(Tribune i : tribune)if(i != null) if(i.getTribunenavn().equals(item.getValue())) {
             tribuneNavn.setText(i.getTribunenavn());
             kapasitet.setText(Integer.toString(i.getKapasitet()));
             pris.setText(Integer.toString(i.getPris()));
-            System.out.println(i.finnAntallSolgteBilletter());
-            solgtebilletter.setText(Integer.toString(i.finnAntallSolgteBilletter()));
-            System.out.println(i.finnInntekt());
+            solgteBilletter.setText(Integer.toString(i.finnAntallSolgteBilletter()));
             inntekt.setText(Integer.toString(i.finnInntekt()));
+
         }
     }
+
+
+    //BILLETT KJØP --------------------------------------------------
+    public void billettKjop() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("Billettkjop.fxml"));
+            AnchorPane page = loader.load();
+
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Kjøp billetter");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            BillettkjopController controller = loader.getController();
+            controller.setDialogStage(dialogStage, tribuneNavn.getText());
+
+            dialogStage.showAndWait();
+            oppdaterTribune(currentItem);
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
 }
