@@ -103,6 +103,7 @@
                         </TextField>
                      </children>
                   </GridPane>
+                  <Button layoutX="331.0" layoutY="513.0" mnemonicParsing="false" onAction="#billettKjop" text="Kjøp billetter" />
                </children></AnchorPane>
         </items>
       </SplitPane>

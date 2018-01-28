@@ -100,5 +100,10 @@ public class Client extends Application implements EventHandler<ActionEvent> {
         nr91.clear();
         letterTextArea.clear();
         nr11.requestFocus();
+        try{
+            letterTextArea.setText(new java.io.File( "." ).getCanonicalPath());
+        } catch (Exception e) {
+            System.out.println("noe gikk galt");
+        }
     }
 }
