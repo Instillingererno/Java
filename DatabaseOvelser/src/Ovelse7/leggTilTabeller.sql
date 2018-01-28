@@ -45,8 +45,8 @@ CREATE TABLE oppdrag (
     oppdragsNr INT AUTO_INCREMENT,
     orgNr INT NOT NULL,
     idKvalifikasjon INT,
-    startDato DATE NOT NULL,
-    sluttDato DATE NOT NULL,
+    startDato DATE,
+    sluttDato DATE,
     PRIMARY KEY (oppdragsNr),
     FOREIGN KEY (orgNr) REFERENCES bedrift(orgNr),
     FOREIGN KEY (idKvalifikasjon) REFERENCES kvalifikasjon(idKvalifikasjon)
@@ -54,8 +54,11 @@ CREATE TABLE oppdrag (
 
 CREATE TABLE historikk (
     idHistorikk INT AUTO_INCREMENT,
+    startDato DATE,
+    sluttDato DATE,
     oppdragsNr INT NOT NULL UNIQUE,
-    sluttData DATE NOT NULL,
+    idKandidat INT NOT NULL,
     PRIMARY KEY (idHistorikk),
-    FOREIGN KEY (oppdragsNr) REFERENCES oppdrag(oppdragsNr)
+    FOREIGN KEY (oppdragsNr) REFERENCES oppdrag(oppdragsNr),
+    FOREIGN KEY (idKandidat) REFERENCES kandidat(idKandidat)
 );
