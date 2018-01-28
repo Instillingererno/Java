@@ -17,7 +17,7 @@ public class NumberGame {
 
     public Svar answer(int input) {
         // (int) ((Math.random() * 4) + 1)
-        long startTime = System.nanoTime();
+        long startTime = System.currentTimeMillis();
         double[] tall = new double[numbers.length];
         String method;
         double result;
@@ -61,8 +61,8 @@ public class NumberGame {
                 if(teller == tall.length || result == input) fortsett = false;
             }
         } while(result != input && iteration < 100000000);
-        long endTime = System.nanoTime();
-        method += iteration + " iterasjons over " + (endTime-startTime) + " ns;";
+        long endTime = System.currentTimeMillis();
+        method += iteration + " iterasjons over " + (endTime-startTime) + " ms;";
         return new Svar(method, result);
     }
 }

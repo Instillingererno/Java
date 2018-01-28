@@ -43,44 +43,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="queries.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ovelse11/queries.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2523">
-              <caret line="87" column="42" lean-forward="false" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bygning" pinned="false" current-in-tab="false">
-        <entry file="das://table:/33440e98/9d5b8bd9-7025-4ab9-a0dc-0784aaeab8f4/ovelse11.bygning">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="poststed" pinned="false" current-in-tab="false">
-        <entry file="das://table:/33440e98/9d5b8bd9-7025-4ab9-a0dc-0784aaeab8f4/ovelse11.poststed">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leilighet" pinned="false" current-in-tab="false">
-        <entry file="das://table:/33440e98/9d5b8bd9-7025-4ab9-a0dc-0784aaeab8f4/ovelse11.leilighet">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9d5b8bd9-7025-4ab9-a0dc-0784aaeab8f4/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -119,9 +82,9 @@
         <option value="$PROJECT_DIR$/src/Ovelse7/leggTilTabeller.sql" />
         <option value="$PROJECT_DIR$/src/Ovelse7/leggTilData.sql" />
         <option value="$PROJECT_DIR$/src/Ovelse7/queries.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9d5b8bd9-7025-4ab9-a0dc-0784aaeab8f4/console.sql" />
         <option value="$PROJECT_DIR$/src/Ovelse11/leggTilTabellerOgData.sql" />
         <option value="$PROJECT_DIR$/src/Ovelse11/queries.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9d5b8bd9-7025-4ab9-a0dc-0784aaeab8f4/console.sql" />
       </list>
     </option>
   </component>
@@ -132,9 +95,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="1390" />
-    <option name="height" value="1100" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -187,12 +151,6 @@
               <item name="DatabaseOvelser" type="b2602c69:ProjectViewProjectNode" />
               <item name="DatabaseOvelser" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DatabaseOvelser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DatabaseOvelser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Ovelse11" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,12 +306,12 @@
       <workItem from="1517111364650" duration="786000" />
       <workItem from="1517114042754" duration="378000" />
       <workItem from="1517114926400" duration="381000" />
-      <workItem from="1517115924370" duration="7266000" />
+      <workItem from="1517115924370" duration="8187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55417000" />
+    <option name="totallyTimeSpent" value="56338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -692,13 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/33440e98/9d5b8bd9-7025-4ab9-a0dc-0784aaeab8f4/ovelse11.leilighet">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ovelse11/leggTilTabellerOgData.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -707,11 +658,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9d5b8bd9-7025-4ab9-a0dc-0784aaeab8f4/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+    <entry file="das://table:/33440e98/9d5b8bd9-7025-4ab9-a0dc-0784aaeab8f4/ovelse11.leilighet">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -733,6 +683,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2523">
           <caret line="87" column="42" lean-forward="false" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9d5b8bd9-7025-4ab9-a0dc-0784aaeab8f4/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
