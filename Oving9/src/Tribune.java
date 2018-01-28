@@ -1,4 +1,7 @@
-public abstract class Tribune {
+import java.io.Serializable;
+import java.util.Arrays;
+
+public abstract class Tribune implements Serializable {
     private final String tribunenavn;
     private final int kapasitet;
     private final int pris;
@@ -22,7 +25,10 @@ public abstract class Tribune {
     abstract public int finnInntekt();
     abstract public Billett[] kjopBillett(int antallBilletter);
     abstract public Billett[] kjopBillett(String[] navn);
-
+    @Override
+    public String toString() {
+        return "\n" + getTribunenavn() + ", inntekt: " + finnInntekt();
+    }
 }
 
 class Staa extends Tribune {
@@ -48,9 +54,10 @@ class Staa extends Tribune {
         } else {
             antSolgteBilletter += antallBilletter;
             Billett[] output = new Billett[antallBilletter];
-            for(Billett i : output) {
-                i = new StaaplassBillett(getTribunenavn(), getPris());
+            for(int i = 0; i < output.length; i++) {
+                output[i] = new StaaplassBillett(getTribunenavn(), getPris());
             }
+            System.out.println(Arrays.toString(output));
             return output;
         }
     }
@@ -90,10 +97,11 @@ class Sitte extends Tribune {
         for (int i = 0; i < antOpptatt.length; i++)
             if ((antallBilletter + antOpptatt[i]) <= plasserPrRad) {
                 Billett[] output = new Billett[antallBilletter];
-                for (Billett j : output) {
-                    j = new SitteplassBillett(getTribunenavn(), getPris(), i, antOpptatt[i]);
+                for (int j = 0; j < output.length; j++) {
+                    output[j] = new SitteplassBillett(getTribunenavn(), getPris(), i, antOpptatt[i]);
                     antOpptatt[i]++;
                 }
+                System.out.println(Arrays.toString(output));
                 return output;
             }
         return null;
@@ -123,8 +131,8 @@ class VIP extends Sitte {
         for (int i = 0; i < getAntOpptatt().length; i++)
             if ((navn.length + getAntOpptatt()[i]) <= plasserPrRad) {
                 Billett[] output = new Billett[navn.length];
-                for (Billett j : output) {
-                    j = new SitteplassBillett(getTribunenavn(), getPris(), i, getAntOpptatt()[i]);
+                for (int j = 0; j < output.length; j++) {
+                    output[j] = new SitteplassBillett(getTribunenavn(), getPris(), i, getAntOpptatt()[i]);
                     tilskuer[i][getAntOpptatt()[i]] = navn[teller];
                     getAntOpptatt()[i]++;
                     teller++;

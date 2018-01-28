@@ -15,10 +15,9 @@
       <file leaf-file-name="Billett.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Billett.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="56" />
+            <state relative-caret-position="1850">
+              <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
               <folding>
-                <element signature="class#Billett#0" expanded="false" />
                 <element signature="e#589#590#0" expanded="true" />
                 <element signature="e#623#624#0" expanded="true" />
                 <element signature="e#651#652#0" expanded="true" />
@@ -27,7 +26,7 @@
                 <element signature="e#773#774#0" expanded="true" />
                 <element signature="e#907#908#0" expanded="true" />
                 <element signature="e#947#948#0" expanded="true" />
-                <element signature="class#SitteplassBillett#0" expanded="false" />
+                <element signature="method#SitteplassBillett#0;class#SitteplassBillett#0" expanded="false" />
                 <element signature="e#1518#1519#0" expanded="true" />
                 <element signature="e#1544#1545#0" expanded="true" />
                 <element signature="e#1573#1574#0" expanded="true" />
@@ -39,22 +38,22 @@
       </file>
       <file leaf-file-name="Main.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="Klient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Klient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Klient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
+            <state relative-caret-position="581">
+              <caret line="31" column="90" lean-forward="false" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,12 +64,25 @@
       <file leaf-file-name="BillettkjopController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BillettkjopController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="1750">
+              <caret line="43" column="53" lean-forward="false" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#930#931#0" expanded="true" />
-                <element signature="e#965#966#0" expanded="true" />
+                <element signature="e#2138#2139#0" expanded="true" />
+                <element signature="e#2173#2174#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeBillettController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SeBillettController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+              <folding>
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,58 +90,47 @@
       </file>
       <file leaf-file-name="Billettkjop.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Billettkjop.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="450">
+              <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SeBillett.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SeBillett.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeTableViewSample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TreeTableViewSample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-              </folding>
-            </state>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tribune.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tribune.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tribune.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+            <state relative-caret-position="350">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#Tribune#0;class#Tribune#0" expanded="false" />
-                <element signature="e#1128#1129#0" expanded="true" />
-                <element signature="method#kjopBillett#0;class#Staa#0" expanded="false" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#1276#1277#0" expanded="true" />
+                <element signature="e#1329#1330#0" expanded="true" />
                 <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
                 <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
-                <element signature="method#kjopBillett#0;class#Sitte#0" expanded="false" />
+                <element signature="e#3410#3411#0" expanded="true" />
+                <element signature="e#3457#3458#0" expanded="true" />
                 <element signature="method#VIP#0;class#VIP#0" expanded="false" />
-                <element signature="method#kjopBillett#1;class#VIP#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -146,6 +147,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>System.out</find>
+    </findStrings>
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -156,14 +162,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/StaaplassBillett.java" />
         <option value="$PROJECT_DIR$/src/Billett.java" />
-        <option value="$PROJECT_DIR$/src/Tribune.java" />
         <option value="$PROJECT_DIR$/src/Main.fxml" />
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_2.snippet" />
-        <option value="$PROJECT_DIR$/src/Billettkjop.fxml" />
         <option value="$PROJECT_DIR$/src/SeBillett.fxml" />
+        <option value="$PROJECT_DIR$/src/Billettkjop.fxml" />
+        <option value="$PROJECT_DIR$/src/SeBillettController.java" />
         <option value="$PROJECT_DIR$/src/BillettkjopController.java" />
         <option value="$PROJECT_DIR$/src/Klient.java" />
+        <option value="$PROJECT_DIR$/src/Tribune.java" />
       </list>
     </option>
   </component>
@@ -173,8 +180,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1357" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
     <option name="width" value="1390" />
     <option name="height" value="1755" />
   </component>
@@ -194,8 +201,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,6 +218,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,7 +227,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Oving8" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -370,15 +380,19 @@
       <updated>1516753107349</updated>
       <workItem from="1516753110253" duration="11876000" />
       <workItem from="1516788105631" duration="1601000" />
-      <workItem from="1516796090003" duration="2213000" />
+      <workItem from="1516796090003" duration="3363000" />
+      <workItem from="1516871402785" duration="5386000" />
+      <workItem from="1516883739550" duration="597000" />
+      <workItem from="1516975238082" duration="2673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15690000" />
+    <option name="totallyTimeSpent" value="25496000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2762" height="1770" extended-state="7" />
+    <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -388,20 +402,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28074694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2119883" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17945907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -418,17 +432,16 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Billett.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="56" />
+        <state relative-caret-position="2250">
+          <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
           <folding>
-            <element signature="class#Billett#0" expanded="false" />
             <element signature="e#589#590#0" expanded="true" />
             <element signature="e#623#624#0" expanded="true" />
             <element signature="e#651#652#0" expanded="true" />
@@ -437,7 +450,7 @@
             <element signature="e#773#774#0" expanded="true" />
             <element signature="e#907#908#0" expanded="true" />
             <element signature="e#947#948#0" expanded="true" />
-            <element signature="class#SitteplassBillett#0" expanded="false" />
+            <element signature="method#SitteplassBillett#0;class#SitteplassBillett#0" expanded="false" />
             <element signature="e#1518#1519#0" expanded="true" />
             <element signature="e#1544#1545#0" expanded="true" />
             <element signature="e#1573#1574#0" expanded="true" />
@@ -447,14 +460,231 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BillettkjopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2150">
+          <caret line="43" column="53" lean-forward="false" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2173#2174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SeBillettController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding>
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Billettkjop.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SeBillett.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tribune.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3600">
+          <caret line="99" column="60" lean-forward="false" selection-start-line="99" selection-start-column="60" selection-end-line="99" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Tribune#0;class#Tribune#0" expanded="false" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
+            <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
+            <element signature="e#3410#3411#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+            <element signature="method#VIP#0;class#VIP#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Klient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Billett.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="56" />
+          <folding>
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="method#SitteplassBillett#0;class#SitteplassBillett#0" expanded="false" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
+            <element signature="e#1573#1574#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BillettkjopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2173#2174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Billettkjop.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SeBillett.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TreeTableViewSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#460#461#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tribune.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Tribune#0;class#Tribune#0" expanded="false" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
+            <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
+            <element signature="e#3410#3411#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+            <element signature="method#VIP#0;class#VIP#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Klient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6400">
+          <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Billett.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="56" />
+          <folding>
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="method#SitteplassBillett#0;class#SitteplassBillett#0" expanded="false" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
+            <element signature="e#1573#1574#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Klient.java">
@@ -468,14 +698,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SeBillett.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TreeTableViewSample.java">
@@ -483,9 +713,9 @@
         <state relative-caret-position="1050">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#460#461#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -495,27 +725,30 @@
         <state relative-caret-position="1400">
           <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#Tribune#0;class#Tribune#0" expanded="false" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="method#kjopBillett#0;class#Staa#0" expanded="false" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
             <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
             <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
-            <element signature="method#kjopBillett#0;class#Sitte#0" expanded="false" />
+            <element signature="e#3410#3411#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
             <element signature="method#VIP#0;class#VIP#0" expanded="false" />
-            <element signature="method#kjopBillett#1;class#VIP#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Billettkjop.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Billett.java">
@@ -523,7 +756,6 @@
         <state relative-caret-position="500">
           <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="56" />
           <folding>
-            <element signature="class#Billett#0" expanded="false" />
             <element signature="e#589#590#0" expanded="true" />
             <element signature="e#623#624#0" expanded="true" />
             <element signature="e#651#652#0" expanded="true" />
@@ -532,7 +764,7 @@
             <element signature="e#773#774#0" expanded="true" />
             <element signature="e#907#908#0" expanded="true" />
             <element signature="e#947#948#0" expanded="true" />
-            <element signature="class#SitteplassBillett#0" expanded="false" />
+            <element signature="method#SitteplassBillett#0;class#SitteplassBillett#0" expanded="false" />
             <element signature="e#1518#1519#0" expanded="true" />
             <element signature="e#1544#1545#0" expanded="true" />
             <element signature="e#1573#1574#0" expanded="true" />
@@ -542,14 +774,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Klient.java">
@@ -567,9 +799,9 @@
         <state relative-caret-position="550">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#460#461#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -579,14 +811,17 @@
         <state relative-caret-position="1400">
           <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#Tribune#0;class#Tribune#0" expanded="false" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="method#kjopBillett#0;class#Staa#0" expanded="false" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
             <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
             <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
-            <element signature="method#kjopBillett#0;class#Sitte#0" expanded="false" />
+            <element signature="e#3410#3411#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
             <element signature="method#VIP#0;class#VIP#0" expanded="false" />
-            <element signature="method#kjopBillett#1;class#VIP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -599,12 +834,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TreeTableViewSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#460#461#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_2.snippet" />
     <entry file="file://$PROJECT_DIR$/src/Billett.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="56" />
+        <state relative-caret-position="1850">
+          <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
           <folding>
-            <element signature="class#Billett#0" expanded="false" />
             <element signature="e#589#590#0" expanded="true" />
             <element signature="e#623#624#0" expanded="true" />
             <element signature="e#651#652#0" expanded="true" />
@@ -613,7 +860,7 @@
             <element signature="e#773#774#0" expanded="true" />
             <element signature="e#907#908#0" expanded="true" />
             <element signature="e#947#948#0" expanded="true" />
-            <element signature="class#SitteplassBillett#0" expanded="false" />
+            <element signature="method#SitteplassBillett#0;class#SitteplassBillett#0" expanded="false" />
             <element signature="e#1518#1519#0" expanded="true" />
             <element signature="e#1544#1545#0" expanded="true" />
             <element signature="e#1573#1574#0" expanded="true" />
@@ -622,87 +869,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TreeTableViewSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_2.snippet" />
-    <entry file="file://$PROJECT_DIR$/src/SeBillett.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Billettkjop.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BillettkjopController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="1750">
+          <caret line="43" column="53" lean-forward="false" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2173#2174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SeBillettController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding>
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Billettkjop.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SeBillett.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Klient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="31" column="90" lean-forward="false" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tribune.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state relative-caret-position="350">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#Tribune#0;class#Tribune#0" expanded="false" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="method#kjopBillett#0;class#Staa#0" expanded="false" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
             <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
             <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
-            <element signature="method#kjopBillett#0;class#Sitte#0" expanded="false" />
+            <element signature="e#3410#3411#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
             <element signature="method#VIP#0;class#VIP#0" expanded="false" />
-            <element signature="method#kjopBillett#1;class#VIP#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BillettkjopController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Klient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -710,7 +958,78 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>JFugue</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Oving9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

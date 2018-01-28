@@ -8,11 +8,10 @@ SELECT bok.tittel, forlag.forlag_navn FROM bok, forlag;
 -- resultatet blir at man alle mulige sammensetninger av tittel og forlag_navn
 
 -- 1c
-SELECT forlag.*, bok.* FROM forlag
-  INNER JOIN bok
-    ON forlag.forlag_id = bok.forlag_id;
+SELECT * FROM forlag, bok
+    where forlag.forlag_id = bok.forlag_id;
 
-SELECT forlag.*, bok.* FROM forlag
+SELECT * FROM forlag
   NATURAL JOIN bok;
 
 -- 1d
@@ -29,9 +28,7 @@ SELECT forlag_navn FROM forlag;
 
 -- 2b
 SELECT DISTINCT forlag.forlag_id FROM forlag
-  LEFT OUTER JOIN bok
-    ON forlag.forlag_id = bok.forlag_id
-  WHERE bok.forlag_id IS NULL;
+  WHERE bok.forlag_id NOT IN (SELECT bok.forlag_id FROM bok);
 -- projeksjon, seleksjon og minus
 
 -- 2c

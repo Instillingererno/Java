@@ -33,68 +33,75 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ovelse7: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="ovelse5: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queries.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ovelse7/queries.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="alt.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="alt.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ovelse6/alt.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2150">
-              <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+            <state relative-caret-position="351">
+              <caret line="46" column="49" lean-forward="false" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leggerTilTabeller.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lagerKorrektData.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ovelse5/lagerKorrektData.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DATABASE/d8553bab-4a90-4f03-a2b4-1770bef6a4f1.SCHEMA:ovelse5" pinned="false" current-in-tab="false">
+        <entry file="uml://DATABASE/d8553bab-4a90-4f03-a2b4-1770bef6a4f1.SCHEMA:ovelse5">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>d8553bab-4a90-4f03-a2b4-1770bef6a4f1.SCHEMA:ovelse5</OriginalElement>
+              <nodes>
+                <node x="14.5" y="283.0">d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.boenhet</node>
+                <node x="0.0" y="0.0">d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.borettslag</node>
+                <node x="18.0" y="522.0">d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.leilighet</node>
+                <node x="4.0" y="849.0">d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.medlemmer</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.boenhet" target="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.borettslag">
+                  <point x="0.0" y="-94.5" />
+                  <point x="0.0" y="116.5" />
+                </edge>
+                <edge source="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.medlemmer" target="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.leilighet">
+                  <point x="0.0" y="-138.5" />
+                  <point x="0.0" y="138.5" />
+                </edge>
+                <edge source="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.leilighet" target="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.boenhet">
+                  <point x="0.0" y="-138.5" />
+                  <point x="0.0" y="94.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.7984293193717278" x="-678.0262295081966" y="290.59016393442624" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Key columns</Category>
+                <Category>Columns</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leggerTilTabeller.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ovelse5/leggerTilTabeller.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Oving7.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ovelse7/Oving7.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leggTilTabeller.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ovelse7/leggTilTabeller.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="104">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,7 +122,6 @@
         <option value="$PROJECT_DIR$/src/Ovelse6/start.sql" />
         <option value="$PROJECT_DIR$/src/Ovelse6/oppg1a.sql" />
         <option value="$PROJECT_DIR$/src/Ovelse5/lagerKorrektData.sql" />
-        <option value="$PROJECT_DIR$/src/Ovelse5/leggerTilTabeller.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/console_2.sql" />
         <option value="$PROJECT_DIR$/src/Ovelse5/seTing1.sql" />
         <option value="$PROJECT_DIR$/src/Forelesning/LevProd.sql" />
@@ -127,6 +133,7 @@
         <option value="$PROJECT_DIR$/src/Ovelse7/leggTilTabeller.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/console.sql" />
         <option value="$PROJECT_DIR$/src/Ovelse7/queries.sql" />
+        <option value="$PROJECT_DIR$/src/Ovelse5/leggerTilTabeller.sql" />
         <option value="$PROJECT_DIR$/src/Ovelse6/alt.sql" />
       </list>
     </option>
@@ -137,11 +144,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-11" />
+    <option name="width" value="1390" />
+    <option name="height" value="1755" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -183,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,20 +214,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Ovelse6" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DatabaseOvelser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DatabaseOvelser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Ovelse7" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,15 +361,17 @@
       <workItem from="1516777818327" duration="138000" />
       <workItem from="1516781010891" duration="1280000" />
       <workItem from="1516785312813" duration="1293000" />
+      <workItem from="1516804599475" duration="1215000" />
+      <workItem from="1516871155906" duration="32000" />
+      <workItem from="1516871389345" duration="5071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40288000" />
+    <option name="totallyTimeSpent" value="46606000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
-    <editor active="true" />
+    <frame x="-13" y="-13" width="2762" height="1770" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -383,9 +385,10 @@
       <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.295557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20906433" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15826024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23903508" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -397,7 +400,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34994698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -412,14 +414,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ovelse7/queries.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
@@ -582,14 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/1cf5a0b4/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/ovelse5.borettslag" />
-    <entry file="file://$PROJECT_DIR$/src/Ovelse5/lagerFeilData.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/1cf5a0b4/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/sys.sys_config" />
     <entry file="file://$PROJECT_DIR$/src/Ovelse6/start.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -600,13 +586,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/console_1.sql" />
     <entry file="das://table:/1cf5a0b4/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/ovelse5.boenhet" />
-    <entry file="file://$PROJECT_DIR$/src/Ovelse5/lagerKorrektData.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/console_2.sql" />
     <entry file="das://table:/1cf5a0b4/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/ovelse5.leilighet" />
     <entry file="file://$PROJECT_DIR$/src/Forelesning/LevProd_red.sql" />
@@ -688,14 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/33440e98/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/ovelse7.kandidat" />
     <entry file="das://table:/33440e98/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/ovelse7.oppdrag" />
     <entry file="file://$PROJECT_DIR$/src/Ovelse7/queries.sql">
@@ -708,24 +679,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ovelse7/Oving7.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ovelse6/alt.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2150">
-          <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ovelse5/lagerFeilData.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/1cf5a0b4/d8553bab-4a90-4f03-a2b4-1770bef6a4f1/ovelse5.borettslag">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/d8553bab-4a90-4f03-a2b4-1770bef6a4f1.SCHEMA:ovelse5">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>d8553bab-4a90-4f03-a2b4-1770bef6a4f1.SCHEMA:ovelse5</OriginalElement>
+          <nodes>
+            <node x="14.5" y="283.0">d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.boenhet</node>
+            <node x="0.0" y="0.0">d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.borettslag</node>
+            <node x="18.0" y="522.0">d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.leilighet</node>
+            <node x="4.0" y="849.0">d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.medlemmer</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.boenhet" target="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.borettslag">
+              <point x="0.0" y="-94.5" />
+              <point x="0.0" y="116.5" />
+            </edge>
+            <edge source="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.medlemmer" target="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.leilighet">
+              <point x="0.0" y="-138.5" />
+              <point x="0.0" y="138.5" />
+            </edge>
+            <edge source="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.leilighet" target="d8553bab-4a90-4f03-a2b4-1770bef6a4f1.TABLE:ovelse5.boenhet">
+              <point x="0.0" y="-138.5" />
+              <point x="0.0" y="94.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7984293193717278" x="-678.0262295081966" y="290.59016393442624" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ovelse5/lagerKorrektData.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ovelse5/leggerTilTabeller.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="104">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ovelse6/alt.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="46" column="49" lean-forward="false" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
           <folding />
         </state>
       </provider>

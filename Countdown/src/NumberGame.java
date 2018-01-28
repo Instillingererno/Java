@@ -1,21 +1,23 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class NumberGame {
     double[] numbers;
+    ArrayList<String> svar = new ArrayList<>();
 
     public NumberGame(double[] numbers) {
         this.numbers = numbers;
     }
 
     public static void main(String[] args) {
-        NumberGame test = new NumberGame(new double[] {75,100,1,5,2,4});
-        Svar resultat = test.answer(686);
+        NumberGame test = new NumberGame(new double[] {3,2,2,2,2,2,2});
+        Svar resultat = test.answer(10);
         System.out.println(resultat.getMethod());
     }
 
     public Svar answer(int input) {
         // (int) ((Math.random() * 4) + 1)
-        long startTime = System.currentTimeMillis();
+        long startTime = System.nanoTime();
         double[] tall = new double[numbers.length];
         String method;
         double result;
@@ -58,9 +60,9 @@ public class NumberGame {
                 }
                 if(teller == tall.length || result == input) fortsett = false;
             }
-        } while(result != input);
-        long endTime = System.currentTimeMillis();
-        method += iteration + " iterasjons over " + (endTime-startTime) + " ms;";
+        } while(result != input && iteration < 100000000);
+        long endTime = System.nanoTime();
+        method += iteration + " iterasjons over " + (endTime-startTime) + " ns;";
         return new Svar(method, result);
     }
 }

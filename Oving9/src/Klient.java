@@ -10,27 +10,32 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import jdk.nashorn.api.tree.Tree;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+
+import static javax.swing.JOptionPane.showMessageDialog;
 
 public class Klient extends Application {
 
-    private static Stage primaryStage;
+    public static Stage primaryStage;
 
     public static ArrayList<Tribune> tribune = new ArrayList<>();
 
     public static void main(String[] args) {
-        tribune.add(new Staa("Ståtribune 1", 100, 100));
-        tribune.add(new Staa("Ståtribune 2", 200, 50));
-        tribune.add(new Sitte("Sittetribune 1", 0, 150, 10, 20));
-        tribune.add(new VIP("Viptribune 1", 0, 200, 5, 5));
+        lesTribune("tribunefil.ser");
         launch(args);
+        lagreTribune("tribunefil.ser", tribune);
+        Collections.sort(tribune, Comparator.comparingInt(Tribune::finnInntekt).reversed());
+        showMessageDialog(null, tribune.toString());
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+
         this.primaryStage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
         Scene scene = new Scene(root);
@@ -38,6 +43,7 @@ public class Klient extends Application {
         primaryStage.setTitle("Tribune ting");
         primaryStage.setScene(scene);
         primaryStage.show();
+
     }
 
     //FXML elementer
@@ -141,5 +147,39 @@ public class Klient extends Application {
     }
 
 
+
+    // LAGRE OG HENTE DATA
+
+    private static boolean lagreTribune(String navn, ArrayList<Tribune> tribune) {
+        try {
+            FileOutputStream file = new FileOutputStream(navn);
+            ObjectOutputStream out = new ObjectOutputStream(file);
+            out.writeObject(tribune);
+            out.close();
+            file.close();
+            return true;
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    private static boolean lesTribune(String navn) {
+        try {
+            FileInputStream file = new FileInputStream(navn);
+            ObjectInputStream in = new ObjectInputStream(file);
+            tribune = (ArrayList<Tribune>) in.readObject();
+            in.close();
+            file.close();
+            return true;
+        } catch (Exception e) {
+            tribune.add(new Staa("Staaplass1", 200, 100));
+            tribune.add(new Staa("Staaplass2", 100, 50));
+            tribune.add(new Sitte("Sitteplass1", 100, 150, 15, 10));
+            tribune.add(new VIP("VIP1", 100, 300, 10, 10));
+            e.printStackTrace();
+        }
+        return false;
+    }
 
 }
