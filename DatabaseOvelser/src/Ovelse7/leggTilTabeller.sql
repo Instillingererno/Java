@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS kandidatKvalifikasjon;
 DROP TABLE IF EXISTS kvalifikasjon;
 DROP TABLE IF EXISTS kandidat;
 DROP TABLE IF EXISTS bedrift;
+DROP FUNCTION IF EXISTS checkTrue;
 
 
 CREATE TABLE bedrift (
@@ -41,24 +42,48 @@ CREATE TABLE kandidatKvalifikasjon (
     FOREIGN KEY (idKvalifikasjon) REFERENCES kvalifikasjon(idKvalifikasjon)
 );
 
+CREATE FUNCTION checkTrue(navn INT, kval INT)
+    RETURNS int
+    BEGIN
+        RETURN CASE
+            WHEN (navn, kval) IN (SELECT idKandidat, idKvalifikasjon FROM kandidatKvalifikasjon)
+                THEN 1
+            ELSE -1
+            END;
+    END;
+
 CREATE TABLE oppdrag (
     oppdragsNr INT AUTO_INCREMENT,
     orgNr INT NOT NULL,
     idKvalifikasjon INT,
+    idKandidat INT,
     startDato DATE,
     sluttDato DATE,
     PRIMARY KEY (oppdragsNr),
     FOREIGN KEY (orgNr) REFERENCES bedrift(orgNr),
-    FOREIGN KEY (idKvalifikasjon) REFERENCES kvalifikasjon(idKvalifikasjon)
+    FOREIGN KEY (idKvalifikasjon) REFERENCES kvalifikasjon(idKvalifikasjon),
+    FOREIGN KEY (idKandidat) REFERENCES kandidat(idKandidat)
 );
+/*DELIMITER $$
+CREATE TRIGGER checkTrue_bi BEFORE INSERT ON oppdrag FOR EACH ROW
+    BEGIN
+        IF checkTrue(NEW.idKandidat, NEW.idKvalifikasjon) = -1 THEN
+            signal sqlstate '45000';
+        END IF;
+    END $$ */
+DELIMITER $$
+CREATE TRIGGER checkTrue_bu BEFORE UPDATE ON oppdrag FOR EACH ROW
+    BEGIN
+        IF checkTrue(NEW.idKandidat, NEW.idKvalifikasjon) = -1 THEN
+            signal sqlstate '45000';
+        END IF;
+    END $$
 
 CREATE TABLE historikk (
     idHistorikk INT AUTO_INCREMENT,
     startDato DATE,
     sluttDato DATE,
     oppdragsNr INT NOT NULL UNIQUE,
-    idKandidat INT NOT NULL,
     PRIMARY KEY (idHistorikk),
-    FOREIGN KEY (oppdragsNr) REFERENCES oppdrag(oppdragsNr),
-    FOREIGN KEY (idKandidat) REFERENCES kandidat(idKandidat)
+    FOREIGN KEY (oppdragsNr) REFERENCES oppdrag(oppdragsNr)
 );

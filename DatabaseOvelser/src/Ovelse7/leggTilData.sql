@@ -23,12 +23,12 @@ INSERT INTO kandidatkvalifikasjon(idKandidat, idKvalifikasjon) VALUES (2,3);
 INSERT INTO kandidatkvalifikasjon(idKandidat, idKvalifikasjon) VALUES (3,4);
 INSERT INTO kandidatkvalifikasjon(idKandidat, idKvalifikasjon) VALUES (3,5);
 
-INSERT INTO oppdrag(orgNr, idKvalifikasjon, startDato, sluttDato)
-    SELECT 1, idKvalifikasjon, '2018-01-19', '2018-01-22'
+INSERT INTO oppdrag(orgNr, idKvalifikasjon, startDato, sluttDato, idKandidat)
+    SELECT 1, idKvalifikasjon, '2018-01-19', '2018-01-22', 1
     FROM kvalifikasjon WHERE navn = 'data'
     LIMIT 1;
-INSERT INTO oppdrag(orgNr, idKvalifikasjon, startDato, sluttDato)
-    SELECT 1, idKvalifikasjon, '2018-02-19', '2018-02-22'
+INSERT INTO oppdrag(orgNr, idKvalifikasjon, startDato, sluttDato, idKandidat)
+    SELECT 1, idKvalifikasjon, '2018-02-19', '2018-02-22', 2
     FROM kvalifikasjon WHERE navn = 'stol'
     LIMIT 1;
 INSERT INTO oppdrag(orgNr, idKvalifikasjon, startDato, sluttDato)
@@ -43,11 +43,11 @@ INSERT INTO oppdrag(orgNr, idKvalifikasjon, startDato, sluttDato)
     SELECT 4, idKvalifikasjon, '2018-04-19', '2018-04-22'
     FROM kvalifikasjon WHERE navn = 'python'
     LIMIT 1;
-INSERT INTO oppdrag(orgNr, idKvalifikasjon, startDato, sluttDato)
-    SELECT 1, idKvalifikasjon, '2018-01-19', '2018-01-22'
+INSERT INTO oppdrag(orgNr, idKvalifikasjon, startDato, sluttDato, idKandidat)
+    SELECT 1, idKvalifikasjon, '2018-01-19', '2018-01-22', 2
     FROM kvalifikasjon WHERE navn = 'stol'
     LIMIT 1;
 
-INSERT INTO historikk(oppdragsNr, startDato, sluttDato, idKandidat) VALUES (6, '2018-01-19', '2018-01-23', 1);
-INSERT INTO historikk(oppdragsNr, startDato, sluttDato, idKandidat) VALUES (1, '2018-01-19', '2018-01-30', 1);
-INSERT INTO historikk(oppdragsNr, startDato, sluttDato, idKandidat) VALUES (2, '2018-02-19', '2018-02-23', 2);
+INSERT INTO historikk(oppdragsNr, startDato, sluttDato) VALUES (6, '2018-01-19', '2018-01-23');
+INSERT INTO historikk(oppdragsNr, startDato, sluttDato) VALUES (1, '2018-01-19', '2018-01-30');
+INSERT INTO historikk(oppdragsNr, startDato, sluttDato) VALUES (2, '2018-02-19', '2018-02-23');
