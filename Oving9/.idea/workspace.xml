@@ -49,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Klient.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Klient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Klient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="-5491">
               <caret line="31" column="90" lean-forward="false" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -114,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tribune.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tribune.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tribune.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="-1819">
+              <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Tribune#0;class#Tribune#0" expanded="false" />
@@ -127,7 +127,8 @@
                 <element signature="e#1276#1277#0" expanded="true" />
                 <element signature="e#1329#1330#0" expanded="true" />
                 <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
-                <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
+                <element signature="e#2617#2618#0" expanded="true" />
+                <element signature="e#2679#2680#0" expanded="true" />
                 <element signature="e#3410#3411#0" expanded="true" />
                 <element signature="e#3457#3458#0" expanded="true" />
                 <element signature="method#VIP#0;class#VIP#0" expanded="false" />
@@ -200,10 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,6 +218,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,11 +387,13 @@
       <workItem from="1516975238082" duration="2673000" />
       <workItem from="1517110918884" duration="445000" />
       <workItem from="1517228763701" duration="897000" />
+      <workItem from="1517832766371" duration="143000" />
+      <workItem from="1517833375510" duration="887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26849000" />
+    <option name="totallyTimeSpent" value="27879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -404,8 +407,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28074694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -416,8 +419,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -517,7 +520,8 @@
             <element signature="e#1276#1277#0" expanded="true" />
             <element signature="e#1329#1330#0" expanded="true" />
             <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
-            <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
+            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
             <element signature="e#3410#3411#0" expanded="true" />
             <element signature="e#3457#3458#0" expanded="true" />
             <element signature="method#VIP#0;class#VIP#0" expanded="false" />
@@ -580,7 +584,8 @@
             <element signature="e#1276#1277#0" expanded="true" />
             <element signature="e#1329#1330#0" expanded="true" />
             <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
-            <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
+            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
             <element signature="e#3410#3411#0" expanded="true" />
             <element signature="e#3457#3458#0" expanded="true" />
             <element signature="method#VIP#0;class#VIP#0" expanded="false" />
@@ -637,7 +642,8 @@
             <element signature="e#1276#1277#0" expanded="true" />
             <element signature="e#1329#1330#0" expanded="true" />
             <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
-            <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
+            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
             <element signature="e#3410#3411#0" expanded="true" />
             <element signature="e#3457#3458#0" expanded="true" />
             <element signature="method#VIP#0;class#VIP#0" expanded="false" />
@@ -710,7 +716,8 @@
             <element signature="e#1276#1277#0" expanded="true" />
             <element signature="e#1329#1330#0" expanded="true" />
             <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
-            <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
+            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
             <element signature="e#3410#3411#0" expanded="true" />
             <element signature="e#3457#3458#0" expanded="true" />
             <element signature="method#VIP#0;class#VIP#0" expanded="false" />
@@ -791,7 +798,8 @@
             <element signature="e#1276#1277#0" expanded="true" />
             <element signature="e#1329#1330#0" expanded="true" />
             <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
-            <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
+            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
             <element signature="e#3410#3411#0" expanded="true" />
             <element signature="e#3457#3458#0" expanded="true" />
             <element signature="method#VIP#0;class#VIP#0" expanded="false" />
@@ -862,7 +870,8 @@
             <element signature="e#1276#1277#0" expanded="true" />
             <element signature="e#1329#1330#0" expanded="true" />
             <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
-            <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
+            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
             <element signature="e#3410#3411#0" expanded="true" />
             <element signature="e#3457#3458#0" expanded="true" />
             <element signature="method#VIP#0;class#VIP#0" expanded="false" />
@@ -943,41 +952,31 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Billettkjop.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SeBillett.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SeBillett.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Klient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="31" column="90" lean-forward="false" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tribune.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="-1819">
+          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Tribune#0;class#Tribune#0" expanded="false" />
@@ -986,10 +985,21 @@
             <element signature="e#1276#1277#0" expanded="true" />
             <element signature="e#1329#1330#0" expanded="true" />
             <element signature="method#Sitte#0;class#Sitte#0" expanded="false" />
-            <element signature="method#finnAntallSolgteBilletter#0;class#Sitte#0" expanded="false" />
+            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
             <element signature="e#3410#3411#0" expanded="true" />
             <element signature="e#3457#3458#0" expanded="true" />
             <element signature="method#VIP#0;class#VIP#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Klient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5491">
+          <caret line="31" column="90" lean-forward="false" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

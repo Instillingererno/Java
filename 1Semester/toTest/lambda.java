@@ -62,6 +62,8 @@ class lambda {
         String[] test = {"Test1", "Test2", "Test3", "Test4"};
 
         Stream.of(test).forEach((index) -> System.out.println(index));
+
+
         Stream.of(test).forEach(System.out::println);
 
         /*Ting.doStuff(() -> {
