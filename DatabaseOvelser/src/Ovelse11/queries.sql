@@ -13,13 +13,13 @@ SELECT MIN(etabl_aar)
 FROM borettslag;
 
 -- 4. Finn adressene til alle bygninger som inneholder leiligheter med minst tre rom.
-SELECT DISTINCT bygn_adr
+SELECT DISTINCT bygn_adr, ant_rom
 FROM bygning
     INNER JOIN leilighet USING (bygn_id)
 WHERE ant_rom > 3;
 
 -- 5. Finn antall bygninger i borettslaget "Tertitten".
-SELECT COUNT(bygn_id)
+SELECT COUNT(bygn_id) AS 'Antall bygninger i Tertitten'
 FROM bygning
     INNER JOIN borettslag USING (bolag_navn)
 WHERE bolag_navn = "Tertitten";
@@ -78,7 +78,7 @@ WHERE ant_rom = 4;
     med 0 andelseiere. (Ekstraoppgave: Hva hvis vi
     vil ha med poststeder med 0 andelseiere?)
  */
-SELECT postnr, poststed, COUNT(and_eier_nr)
+SELECT postnr, poststed, COUNT(and_eier_nr) AS "Antall andelseiere"
 FROM poststed
     INNER JOIN bygning USING (postnr)
     INNER JOIN leilighet USING (bygn_id)
