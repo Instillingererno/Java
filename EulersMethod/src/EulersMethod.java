@@ -30,9 +30,8 @@ public class EulersMethod {
         System.out.printf("Difference: %.4f\n", Math.abs(test.estimateValue(1, 0.01) - (2+Math.pow(Math.E,Math.pow(-1,3)))));
         System.out.printf("Difference: %.4f\n", Math.abs(test.estimateValue(1, 0.001) - (2+Math.pow(Math.E,Math.pow(-1,3)))));
     }
-}
 
-
-interface Function {
-    double run(double x, double y);
+    interface Function {
+        double run(double x, double y);
+    }
 }
