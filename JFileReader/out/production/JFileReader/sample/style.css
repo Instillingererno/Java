@@ -1,0 +1,7 @@
+.scroll-bar {
+    -fx-pref-width: 100%;
+    -fx-opacity: 0;
+}
+.text-area {
+    -fx-control-inner-background: #313131;
+}
